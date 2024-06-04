@@ -1,1 +1,1 @@
-Anonymous CoRL 2024 Submission
+Local preview: `bundle exec jekyll serve`
