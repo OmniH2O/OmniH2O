@@ -65,7 +65,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            
+            We present OmniH2O (<u>Omni</u> <u>H</u>uman-<u>to</u>-Humanoid), a learning-based system for whole-body humanoid teleoperation and autonomy. Using kinematic pose as a universal control interface, OmniH2O empowers various ways humans control a full-sized humanoid with dexterous hands, including VR-based real-time whole-body teleoperation, verbal instruction, and real-time RGB camera or offline video. OmniH2O also enables full autonomy by learning from teleoperated demonstrations or integrating with frontier models such as GPT-4o. OmniH2O demonstrates versatility and dexterity in various real-world whole-body tasks through teleoperation or autonomy, such as playing multiple sports, moving and manipulating objects, and interacting with humans, as shown in Figure 1. OmniH2O builds on an RL-based sim-to-real pipeline, which involves large-scale retargeting and augmentation of human motion datasets, learning a real-world deployable policy with sparse sensor input by imitating a privileged teacher policy, and reward designs to enhance robustness and stability. We open-source our humanoid controller and released the first humanoid whole-body demonstration dataset <em>OmniH2O-6</em> containing six representative tasks.
           </p>
         </div>
       </div>
@@ -255,6 +255,33 @@
       </div>
       <div class="column is-two-fourth is-centered has-text-centered">
         <video class="lazy-video" controls loop muted playsinline src="./resources/locomotion/OutdoorLocomotion-Clip9-720P.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Method</h2>
+    <h2 class="title is-4" style="text-align: center;">OmniH2O</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-thirds">
+        <div class="content has-text-justified">
+          <ol type="a">
+            <li> OmniH2O retargets large-scale human motions and filters out infeasible motions for humanoids.
+            </li>
+            <li> Our <span style="color: RoyalBlue; font-weight: bold;">sim-to-real policy</span> is distilled through supervised learning from an <span style="color: darkred; font-weight: bold;">RL-trained privileged policy</span> using privileged information.
+            </li>
+            <li> The universal design of OmniH2O supports versatile <span style="color: DarkGreen; font-weight: bold;">human control interfaces</span> including VR headset and RGB camera <i>etc.</i> The sim-to-real policy also supports being controlled by <span style="color: gold; font-weight: bold;">autonomous agents</span> like GPT-4 or Diffusion policy trained by <span style="color: Purple; font-weight: bold;">teleoperation dataset</span> to generate motion goals.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-four-fifth">
+        <img src="./resources/method/OmniH2O-Pipeline.png" alt="" style="width: 100%;" />
       </div>
     </div>
   </div>
