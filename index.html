@@ -164,7 +164,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present OmniH2O (<u>Omni</u> <u>H</u>uman-<u>to</u>-Humanoid), a learning-based system for whole-body humanoid teleoperation and autonomy. Using kinematic pose as a universal control interface, OmniH2O empowers various ways humans control a full-sized humanoid with dexterous hands, including VR-based real-time whole-body teleoperation, verbal instruction, and real-time RGB camera or offline video. OmniH2O also enables full autonomy by learning from teleoperated demonstrations or integrating with frontier models such as GPT-4o. OmniH2O demonstrates versatility and dexterity in various real-world whole-body tasks through teleoperation or autonomy, such as playing multiple sports, moving and manipulating objects, and interacting with humans, as shown in Figure 1. OmniH2O builds on an RL-based sim-to-real pipeline, which involves large-scale retargeting and augmentation of human motion datasets, learning a real-world deployable policy with sparse sensor input by imitating a privileged teacher policy, and reward designs to enhance robustness and stability. We open-source our humanoid controller and released the first humanoid whole-body demonstration dataset <em>OmniH2O-6</em> containing six representative tasks.
+            We present OmniH2O (<u>Omni</u> <u>H</u>uman-<u>to</u>-Human<u>o</u>id), a learning-based system for whole-body humanoid teleoperation and autonomy. Using kinematic pose as a universal control interface, OmniH2O empowers various ways humans control a full-sized humanoid with dexterous hands, including VR-based real-time whole-body teleoperation, verbal instruction, and real-time RGB camera or offline video. OmniH2O also enables full autonomy by learning from teleoperated demonstrations or integrating with frontier models such as GPT-4o. OmniH2O demonstrates versatility and dexterity in various real-world whole-body tasks through teleoperation or autonomy, such as playing multiple sports, moving and manipulating objects, and interacting with humans, as shown in Figure 1. OmniH2O builds on an RL-based sim-to-real pipeline, which involves large-scale retargeting and augmentation of human motion datasets, learning a real-world deployable policy with sparse sensor input by imitating a privileged teacher policy, and reward designs to enhance robustness and stability. We release the first humanoid whole-body demonstration dataset <em>OmniH2O-6</em> containing six representative tasks.
           </p>
         </div>
       </div>
@@ -387,7 +387,60 @@
 </section>
 
 
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Failure Cases</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video class="lazy-video" controls loop muted playsinline src="./resources/failure/FailureCase-Crash1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <div class="content is-two-third has-text-centered">
+        </div>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video class="lazy-video" controls loop muted playsinline src="./resources/failure/FailureCase-Crash2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <div class="content is-two-third has-text-centered">
+        </div>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video class="lazy-video" controls loop muted playsinline src="./resources/failure/FailureCase-Hammer.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <div class="content is-two-third has-text-centered">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
+
+<div class="columns is-centered">
+  <div class="column is-full-width">
+    <div class="is-vcentered interpolation-panel">
+      <h2 class="title is-2" style="text-align: center;">Related Work</h2>
+      <div class="content is-centered has-text-centered">
+        This work is based on our Previous Work: Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation
+      </div>
+      <br><br>
+      <div class="container">
+        <div class="subtitle is-centered">
+          <table width="100%">
+            <tbody><tr>
+              <td width="100%">
+              <div style="float:left;margin-right:30px;margin-left:30px;">
+              <video autoplay="" loop="" muted="" src="resources/h2o-preview.mp4" width="400"></video>
+              </div>
+              Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation <br>
+             Tairan He*, Zhengyi Luo*, Wenli Xiao, Chong Zhang, Kris Kitani, Changliu Liu, Guanya Shi <br>
+              <!-- CoRL 2023 <br> <br> <br>  -->
+              <a href="https://human2humanoid.com/resources/H2O_paper.pdf">PDF</a> | 
+              <a href="https://www.youtube.com/watch?v=0W4N2q7xtcQ">Video</a> |
+              <a href="https://human2humanoid.com/">Project Page</a> 
+            </td></tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
